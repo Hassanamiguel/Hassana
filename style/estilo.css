@@ -159,7 +159,7 @@ article{
         display: none;
         text-align: center;
         align-items: center;
-        margin: 70px auto;
+        margin: 70px 10px;
     }
     .ul li a{
         text-align: center;
