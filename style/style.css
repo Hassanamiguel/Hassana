@@ -1,0 +1,315 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 10% 0% 10%;
+}
+
+.logo h1 a{
+    font-style: italic;
+    cursor: pointer;
+    color:#5aa8e071;
+    text-decoration:none;
+}
+.nav-bar .ul li {
+    display: inline-flex;
+    list-style: none;
+    text-decoration: none;
+    margin: 10px;
+}
+.nav-bar .ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.nav-bar .ul li a::after{
+    content:"";
+    height: 3px;
+    width: 0%;
+    background-color: #3DBEF5;
+    display: block;
+    transition: 0.3s;
+    margin: 0 auto;
+}
+.nav-bar .ul li a:hover::after{
+    width: 100%;
+}
+.nav-bar .menu-mobile{
+    display: none;
+}
+.nav-bar .ul .closeMenu{
+    display: none;
+}
+.Container {
+    margin: 1% 10% 1% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Container >.image{
+    margin-bottom: 0%;
+    filter: opacity(10%);
+}
+.Container-b{
+    margin: 10% 0% 10% 0%;
+}
+.Container-box h1 , h1 ,p{
+    margin-top: 10px;
+}
+.Container-box > p{
+    font-size: 14pt;
+}
+.Container-box h1 , h1 {
+    font-size: 32px;
+}
+.btn{
+    font-size: 14pt;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 7px 25px 7px 25px;
+    background-color:#6EB8E0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: animar infinite ease-out 2s ;
+}
+.Container-box > button:hover{
+    background-color: #2282F0;
+}
+@keyframes animar {
+    from{
+        outline: 0px solid #6eb8e06e;
+    }
+    to{
+        outline: 15px solid #6eb8e06b;
+    }
+}
+
+.menu li{
+    list-style:none;
+    display: inline-flex;
+    margin: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    transition: 0.1s;
+}
+.menu li a::after{
+    content: "";
+    height: 3px;
+    background-color: #464FEB;
+    width: 0%;
+    display: block;
+    transition: 0.2s;
+    margin: 0 auto;
+}
+.menu li a:hover::after{
+    width: 100%;
+}
+.image-box img{
+    width: 300px;
+    background:white;
+    border-radius: 20px;
+    margin: 20% 0% 0% 0%;
+}
+.image-box img:hover{
+    margin: 30% 0% 0% 0%;
+    filter: opacity(30%);
+}
+.Container-b{
+    text-align: justify;
+    margin: 0% 10% 0px 10%;
+    color:#8A8D91;
+    height: 100vh;display: inline-flex;
+}
+.Container-b > .Container-box{
+    padding: 0% 10% 0% 10%;
+    margin: 7% 0% 0% 0%;
+}
+.Container-b > .Container-box > h1 ,p ,.menu, .hobies{
+    margin: 0% 0% 7% 0%;
+}
+.Container-b > .Container-box > h1{
+    color:#2282F0 ;
+}
+.hobies > p > a{
+    color: #464FEB;
+    cursor: pointer;
+    font-size: 10pt;
+    text-decoration: none;
+}
+.hobies > p :hover{
+    color: #a629ee;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    margin: 14% 10% 12% 10%;
+    height: 100%;
+    align-items: center;
+}
+section .text > h3 ,p{
+    margin-top: 9%;
+}
+section .text{
+    text-align: justify;
+    width: 400px;
+}
+section .text > h3{
+    font-size: 30pt;
+}
+section .text > p{
+    font-size: 14pt;
+}
+section .img{
+    filter: opacity(80%);
+}
+.depoimentos{
+    display: flex;
+    text-align: center;
+    margin: 14% 10% 5% 10%;
+    flex-direction: column;
+}
+.depoimentos > .container-big > h2 , p{
+    margin: 5px 0px 2px 0px;
+}
+.depoimentos > .container-big p{
+    margin: 0px 0px 30px 0px;
+}
+.container-sml {
+    text-align: center;
+    color: black;
+    background: white;
+    border-radius: 20px;
+    width: 300px;
+    height: 430px;
+}
+.container-small .container-sml > h2{
+    font-size: 14pt;
+    margin: 10px ;
+    background: white;
+    color: #000;
+}
+.container-small .container-sml > p, .estrelas{
+    text-align: center;
+    margin: 10px 0px 10px 0px;
+    background-color: #ffffff;
+    color: #000;
+}
+.depoimentos > .container-small  img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    background: rgb(0, 0, 0);
+    margin: 20px 0px 10px 0px ;
+
+}
+.container-small{
+    border:none;
+    border-radius: 20px;
+    display: inline-flex;
+    
+    padding: 0px 20px 0px 20px;
+}
+.estrelas {
+    border-top: 1px solid black;
+    margin: 15px 0;
+}
+.estrelas li{
+    list-style: none;
+    display: inline-flex;
+    margin: 15px 0px;
+}
+.container-sml .estrelas > li > i{
+    color: #000;
+    background: white;
+    font-size: 16pt;
+    cursor: pointer;
+} 
+.container-small > .container-sml{
+    margin: 0% 2% 0% 2%;
+}
+.container-sml>h2,p:hover{
+    background: #3DBEF5;
+}
+@media (max-width: 1104px) {
+    header{
+        margin: 3% 10% 10% 10%;
+        align-items: center;
+    }
+    .nav-bar .ul {
+        height: 100%;
+        position:fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #464FEB;
+        transition: top 1s ease;
+        display: none;
+    }
+    .nav-bar .ul li a{
+        text-decoration: none;
+        color: white;
+        background-color:#464FEB;
+        margin: 0px 0px 0px 0px;
+        width: 100%;
+        align-items: center;
+        transition: 0.5s;
+        font-size: 20pt;
+    }
+    .nav-bar .ul li a:hover{
+        color: #161616;
+    }
+    .nav-bar .ul li a::after{
+        display: none;
+        transition: 1.5s;
+    }
+    .nav-bar .menu-mobile{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        border: none;
+        top: 0;
+        left: 0;
+    }
+    .nav-bar .ul .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 30pt;
+        cursor: pointer;
+    }
+    .nav-bar .ul .closeMenu i{
+        background-color: #464FEB;
+        padding: 10px;
+    }
+    .Container{
+        flex-direction: column-reverse;
+    }
+    section{
+        flex-direction: column-reverse;
+        margin: 1% 10% 1% 10%;
+    }
+    .container-small{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        max-width: 200px;
+    }
+}
+
+
